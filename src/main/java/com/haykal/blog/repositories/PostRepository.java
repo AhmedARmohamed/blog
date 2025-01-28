@@ -1,10 +1,11 @@
 package com.haykal.blog.repositories;
 
+import com.haykal.blog.domain.entities.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
 @Repository
-public interface Post extends JpaRepository<Post, UUID> {
+public interface PostRepository extends JpaRepository<Post, UUID> {
 }
